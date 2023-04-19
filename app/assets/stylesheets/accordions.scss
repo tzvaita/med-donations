@@ -1,0 +1,55 @@
+body.blog_posts_show #accordion {
+  .card {
+    background-color: #fff;
+  }
+  .card-header {
+    background-color: #fff;
+  }
+}
+
+#accordion {
+  &.faq {
+    margin-top: 1em;
+  }
+  .card {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fafafa;
+    background-clip: border-box;
+    margin-bottom: 5px;
+
+    p {
+      padding: .75rem 1.25rem;
+      margin-bottom: 0;
+    }
+  }
+  .card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    // background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    cursor: pointer;
+  }
+  h5 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    &:after {
+      content: '▼';
+      //color: #007aff;
+      float:right;
+      right: 5%;
+    }
+  }
+  button {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  &.faq {
+    .card {
+
+    }
+  }
+}

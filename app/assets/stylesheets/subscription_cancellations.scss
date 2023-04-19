@@ -1,0 +1,228 @@
+$green: #14b5d0;
+
+.subscription_cancellations_edit .offer-content {
+  text-align: center;
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
+  h1 {
+    margin-top: 1em;
+  }
+  img {
+    width: 6em;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #1481f8;
+    font-weight: bold;
+  }
+  p {
+    max-width: 35em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .btn-success {
+    display: inline-block;
+    max-width: 25em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+  }
+  input[type='submit']:disabled {
+    background-color: #5cb85c !important;
+  }
+}
+
+
+
+.cancellation-flow {
+  .error {
+    color: #e74c3c;
+  }
+
+  .modal-dialog {
+    @media (min-width:960px) {
+      width: 450px;
+    }
+
+    .modal-content {
+      .modal-header {
+        border-bottom: 0;
+      }
+      .modal-body {
+        padding-top: 0;
+        .title {
+          text-align: center;
+          margin-bottom: 30px;
+          margin-top: 0;
+        }
+        .subtitle {
+          margin-top: 30px;
+          text-align: center;
+          color: $green;
+        }
+        .header-img {
+          width: 80px;
+          margin: 0 auto;
+          display: block;
+        }
+        p.content {
+          text-align: center;
+          margin: 30px 10px 30px 10px;
+
+          &.hidden {
+            display: none;
+          }
+        }
+      }
+      .modal-footer {
+        text-align: center;
+        border-top: 0;
+
+        .btn {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          color: white;
+          &:hover {
+            color: white
+          }
+        }
+
+        input.btn.btn-success[disabled] {
+          background: #14b5d0 !important;
+        }
+
+        input.btn.btn-warning[disabled] {
+          background: #F05F40 !important;
+        }
+
+
+        .btn-success {
+          background-color: $green;
+        }
+      }
+    }
+  }
+}
+
+.step {
+  &.hidden {
+    display: none;
+  }
+}
+
+.control-label.radio_buttons {
+  display: block;
+}
+
+.radio.checkbox-inline {
+  margin-top: 0;
+}
+
+
+.step-1 {
+  div.pros-list {
+    margin-top: 30px;
+
+    div.item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 30px;
+
+      img {
+        width: 30px;
+      }
+
+      p {
+        width: 90%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.step-3 {
+  div.options {
+    margin: 30px 10px 0px 10px;
+
+    div.option {
+      margin-bottom: 30px;
+
+      &.radio-selection {
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+      span {
+        margin-left: 10px;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .flex {
+    div:first-child {
+      flex-grow: .5;
+    }
+    div:nth-child(2) {
+      flex-grow: 2;
+    }
+  }
+}
+
+.loading {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#found-home {
+  padding-right: 0;
+
+  h3 {
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  label {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .btn-success {
+    background: #12b66e;
+    width: 100%;
+    padding: 15px 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .modal-footer {
+    padding-top: 0;
+  }
+  .form-control {
+    border: 1px solid #686868;
+  }
+  .help-block {
+    margin-top: 10px;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.justify-between {
+    justify-content: space-between;
+  }
+
+  &.justify-around {
+    justify-content: space-around;
+  }
+}

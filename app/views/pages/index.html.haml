@@ -1,0 +1,34 @@
+-# - properties_count = @property_type.present? ? Property.active.where(property_type: @property_type).count.round_to(50) : Property.active.count.round_to(50)
+%header#background-image
+  .header-content
+    .header-content-inner.with-background
+      #frontpage-search
+        %h2
+          = "Welcome #{current_user.email}" if user_signed_in?
+          = "There are currently"
+          %span
+            = link_to "#{Donation.count} Donations", donations_path
+          %span and
+          %span
+            = link_to "#{Request.count} Requests", requests_path
+
+
+- unless current_user.present?
+  %aside.bg-dark
+    .container.text-center
+      .call-to-action
+        %h2
+          -# %b= t(".sign_up_to_start_searching_for_your_next_home_#{@property_type}", default: t('.sign_up_to_start_searching_for_your_next_home', rounded_count: Property.active.count), rounded_count: Property.active.count).html_safe
+
+        -# %p= t('.advantage_explanation',number: number_with_delimiter(Property.active.count)).html_safe
+
+        -# = link_to new_subscription_path, remote: true, class: 'btn btn-success btn-lg' do
+          = t('.sign_up')
+
+%section#carousel.bg-primary
+  .container.text-center
+    .row
+      .col-lg-8.text-center
+        .container
+          -# = render partial: 'properties/carousel', locals: {properties: @carousel_properties}
+-# = render 'layouts/footer'

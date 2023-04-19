@@ -1,0 +1,16 @@
+%p{:style => "color: green"}= notice
+
+%table.table.table-bordered
+  %thead
+    %tr
+      %th Name
+      %th Quantity
+  %tbody
+    %td= @request.name
+    %td= @request.quantity
+    %td
+      = link_to "Donate"
+    %td
+      = link_to "Buy", new_owner_path
+
+= link_to "Back to requests", requests_path

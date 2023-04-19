@@ -1,0 +1,43 @@
+#trustpilot-review {
+  padding-right: initial;
+  h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .icon {
+    width: 100%;
+    max-width: 200px;
+  }
+  p {
+    font-size: 1.4em;
+    line-height: 1.4;
+  }
+  .btn-success {
+    background: #36B64C;
+    text-transform: initial;
+    border-radius: initial;
+    font-weight: 400;
+    font-size: 1.4em;
+    padding: 10px 40px;
+    line-height: 1.4;
+  }
+}
+
+#help-us-improve,
+#trustpilot-review {
+  .btn-success {
+    background: #36B64C;
+    text-transform: initial;
+    border-radius: initial;
+    font-weight: 400;
+    font-size: 1.4em;
+    padding: 10px 40px;
+    line-height: 1.4;
+    color: #FFF;
+    border: 0;
+
+    &:focus, &:active {
+      border: 0;
+    }
+  }
+}

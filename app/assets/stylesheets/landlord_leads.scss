@@ -1,0 +1,210 @@
+body.landlord_leads_new, body.landlord_leads_create {
+
+  @media(min-width: 760px){
+    padding-top: 3.5em;
+    #wrap {
+      background-image: url(/landlord-leads-background.png);
+      background-size: 100%;
+      background-position: top left;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  .hero-image-container { display: none }
+
+  @media(max-width: 760px){
+    .hero-image-container {
+      display: block;
+      margin-top: -3em;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .landlord-lead-text-and-form {
+
+    form {
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: .5em;
+    }
+
+    @media(min-width: 760px){
+      margin-top: 2em;
+      h1, p, label {
+        color: white;
+      }
+    }
+
+    @media(max-width: 760px){
+      h1 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+      }
+      p, h1 {
+        text-align: center;
+      }
+      p {
+        font-size: .95em;
+      }
+      .hero-image-container {
+        display: block;
+        margin-top: -3em;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    padding-top: 2em;
+    letter-spacing: 1px;
+
+    .form-control {
+      height: 44px;
+    }
+
+    .form-control::placeholder {
+      letter-spacing: 1px;
+    }
+
+    label {
+      font-weight: normal;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #00c15e;
+      color: white;
+      padding: 15px 12px;
+      letter-spacing: 1px;
+      text-transform: none;
+    }
+
+  }
+
+}
+
+.well.search_agent_signup {
+  background-color: rgb(1, 128, 198);
+  border-radius: 10px;
+  color: white;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    letter-spacing: 1.36px;
+  }
+  p {
+    margin-bottom: .5em;
+    letter-spacing: 1.36px;
+  }
+  .form-group {
+    margin-bottom: 0;
+    input {
+      //border-radius: 20px;
+    }
+  }
+  .btn {
+    border: none;
+    //border-radius: 20px;
+    width: 100%;
+  }
+}
+
+body.properties_index {
+  // padding-top: calc(5em + 45px);
+}
+
+.landlord-lead-banner {
+  height: 45px;
+  background-color: #007ecb;
+  color: white;
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  @media(max-width: 760px){
+    .description {
+      display: none;
+    }
+  }
+
+}
+
+.toggle {
+
+  margin-top: 5px;
+  text-align: right;
+
+    /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.45);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .toggle-slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .toggle-slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .toggle-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .toggle-slider.round {
+    border-radius: 34px;
+  }
+
+  .toggle-slider.round:before {
+    border-radius: 50%;
+  }
+
+}

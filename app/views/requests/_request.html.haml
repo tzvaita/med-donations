@@ -1,0 +1,10 @@
+%div{:id => "#{dom_id request}"}
+  %p
+    %strong Requested by
+    = request.user.email
+  %p
+    %strong Name:
+    = request.name
+  %p
+    %strong Quantity:
+    = request.quantity

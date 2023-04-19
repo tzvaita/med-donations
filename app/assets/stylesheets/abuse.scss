@@ -1,0 +1,25 @@
+#newAbuseModal {
+  .modal-footer {
+    text-align: left;
+  }
+  .btn {
+    background-color: #5cb85c !important;
+    color: white !important;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  .fineprint {
+    text-align: center;
+  }
+}
+
+// iPad+
+@media(min-width: 768px) {
+  #newAbuseModal {
+    .modal-dialog {
+      max-width: 400px;
+    }
+  }
+}

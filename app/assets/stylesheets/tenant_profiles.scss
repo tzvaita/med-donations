@@ -1,0 +1,619 @@
+.tenant_profiles_show {
+
+  .page-header {
+    margin-bottom: 10px;
+  }
+
+  .label {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
+
+  .breadcrumb {
+    background-color: inherit;
+  }
+
+  .white-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    h1 {
+      margin-top: 0;
+    }
+    &.description {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+      h3 {
+        margin-top: 0;
+        font-weight: bold;
+      }
+    }
+    &.similar-properties {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+      h3 {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+      }
+    }
+
+    .upper-content {
+      //padding-bottom: 1em;
+      border-bottom: 1px solid #d9d9d9;
+      h1 {
+        font-size: 2em;
+        margin-bottom: 5px;
+        color: rgb(47, 55, 79);
+      }
+      .location {
+        color: rgb(47, 55, 79);
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+    }
+
+    .lower-content-rows {
+      .f-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+        font-size: 1.1em;
+        .f-column:nth-child(1) {
+          color: rgb(153, 153, 153);
+        }
+        .f-column:nth-child(2) {
+          align-self: flex-end;
+          color: rgb(47, 55, 79);
+        }
+        img, svg {
+          width: 1.3em;
+          height: 1.3em;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .map-and-cta {
+      margin-top: 1em;
+      #map {
+        margin-bottom: 1em;
+      }
+
+      .fb-button {
+        font-size: 1.5em;
+        padding: 0;
+        outline: none;
+        margin: 0;
+        a {
+          color: white;
+          display: block;
+          margin: 0;
+          padding: 0.6em 1em;
+          &:hover,
+          &:active {
+            color: white;
+            text-decoration: none;
+          }
+
+          img, svg {
+            height: 2em;
+            width: auto;
+            vertical-align: middle;
+            margin-right: 1em;
+            margin-top: -3px;
+          }
+
+        }
+
+        @media (max-width: 413px) {
+          font-size: 1.2em;
+          margin-top: 1em;
+        }
+
+      }
+    }
+  }
+}
+
+.contact-landlord {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  .btn {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.package-info p {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.property.panel {
+  img {
+    // margin-top: -1em;
+    // margin-left: -1.15em;
+    // margin-bottom: -1.1em;
+    // border-bottom-left-radius: 4px;
+    width: 110%;
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  table {
+    @media (min-width: 1000px) {
+      margin-top: -0.5em;
+    }
+    margin-bottom: 0px;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 0px;
+    a {
+      color: inherit;
+    }
+  }
+}
+
+#tenant-profile-cta-modal {
+
+  .modal-dialog {
+    max-width: 550px;
+  }
+
+  .modal-content {
+    text-align: center;
+    //padding-top: 1em;
+
+    img.icon {
+      width: 100px;
+      margin-bottom: 1.5em;
+    }
+
+    .heading {
+      margin-bottom: .5em;
+    }
+
+    .subheading {
+      max-width: 27em;
+      margin: auto;
+      font-weight: bold;
+    }
+
+    ul.selling-points {
+      text-align: left;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+      li {
+        margin-bottom: 5px;
+        font-size: 1.2em;
+      }
+    }
+
+  }
+
+  .modal-footer {
+
+    background-color: #979797;
+    text-align: center;
+    padding: 25px 15px;
+
+    input[type=email]{
+      height: 44px;
+      border: 1px solid #000000;
+    }
+
+    .confirm-button{
+      display: block;
+      width: 100%;
+      text-transform: none;
+      letter-spacing: 1px;
+      font-size: 1.2em;
+      font-weight: normal;
+      margin-bottom: 1em;
+      background-color: #32ae5f;
+      border: 1px solid green;
+      &:hover {
+        color: white;
+        opacity: .95;
+      }
+    }
+
+    .dismiss-link {
+      color: black;
+      text-decoration: underline;
+      letter-spacing: 1px;
+    }
+
+  }
+
+}
+
+#show-tenant-contact-details-modal {
+  ul li {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+  }
+}
+
+.selectize-input {
+  height: 40px;
+  padding: 8px 12px !important;
+}
+.selectize-dropdown {
+  height: auto !important;
+}
+
+.tenant_profiles_index {
+  background: #fff;
+  // @media(min-width: 769px){
+  //   padding-top: 12em;
+  // }
+  #search-filters {
+    background-color: #fff;
+    // box-shadow: -1px 7px 12px -2px rgba(0,0,0,0.22);
+  }
+  .breadcrumb {
+    margin-bottom: 5px !important;
+    background-color: inherit;
+    padding-left: 0;
+    color: #1481f8;
+    border-radius: 0;
+    border-bottom: 1px solid #dedede;
+  }
+}
+
+.tenant_profiles_show {
+  background: #fafafa;
+  padding-top: 6em;
+  // .breadcrumb {
+  //   margin-bottom: 5px !important;
+  //   background-color: inherit;
+  //   padding-left: 0;
+  //   color: #1481f8;
+  //   border-radius: 0;
+  //   border-bottom: 1px solid #dedede;
+  // }
+  .max-rent {
+    letter-spacing: 1px;
+    .rent {
+      font-weight: bold;
+      color: #1481F8;
+    }
+  }
+  a.contact-tenant {
+    // padding: 0.6em 2.5em !important;
+    &:focus {
+      text-decoration: none;
+    }
+    @media(max-width: 768px){
+      padding: .6em 1.5em !important;
+      font-size: .9em;
+    }
+  }
+}
+
+.contact-tenant {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  .btn {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body.tenant_profiles_new, body.tenant_profiles_create, body.tenant_profiles_edit, body.tenant_profiles_update {
+
+  .flex-container {
+    display: flex;
+    > div {
+      margin-right: 1.5em;
+      .checkbox {
+        margin-top: 0;
+      }
+    }
+  }
+
+  #background-image {
+
+    margin-top: -2.5em;
+    min-height: 350px;
+    margin-bottom: 1em;
+
+    .header-content {
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      padding-top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .header-content-inner {
+        padding-top: 3em;
+      }
+
+      h1 {
+        color: white;
+        text-transform: none;
+        font-size: 2.5em;
+        margin-bottom: .5em;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      p, strong {
+        color: white;
+      }
+
+      strong {
+        display: block;
+        margin-top: 2em;
+      }
+
+    }
+
+    .fb-button {
+      padding: 1em 1.5em;
+    }
+
+    .fb-button:hover {
+      color: white;
+    }
+
+  }
+
+  #about {
+    .text-content {
+      font-size: .8em;
+
+      @media(min-width: 760px){
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      @media(max-width: 760px){
+        padding-bottom: 10em;
+        padding-top: 3em;
+        p {
+          max-width: initial;
+        }
+      }
+
+      h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+  }
+
+  background-color: #fafafa;
+
+  hr {
+    border-color: #f6a3a2;
+    border-width: 4px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  form .btn {
+    text-transform: none;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    &:hover {
+      color: white;
+    }
+  }
+
+  form .form-control:not(textarea) {
+    height: 40px;
+  }
+
+  .round-checkbox {
+    position: relative;
+  }
+
+  .f-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .f-column {
+      margin-right: 2em;
+    }
+  }
+
+  .round-checkbox label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+  }
+
+  .round-checkbox label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+  }
+
+  .round-checkbox input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .round-checkbox input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+  }
+
+  .round-checkbox input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+  .dz-message {
+    color: #a7a7a7;
+    .fb-button {
+      display: inline-block;
+    }
+  }
+
+  .deletion-notice {
+    color: #8C8C8C;
+    margin-top: 1em;
+  }
+
+}
+
+.tenant-profile.thumbnail {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  max-width: 345px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.06);
+
+  .location-label {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 100px;
+    z-index: 2;
+  }
+
+  .new-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    width: auto;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: #f24c4b;
+    font-size: 0.8em;
+    z-index: 2;
+  }
+  .caption {
+    background-color: white;
+    .prop-label {
+      color: #ff9797;
+    }
+    .prop-value {
+      color: #838383;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    p {
+      margin-bottom: 0;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .field {
+      display: block;
+      padding-right: 5px;
+      padding-left: 5px;
+      img, svg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+  img.property-image {
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom: none;
+    @media(min-width: 768px){
+      height: 189.77px !important;
+    }
+  }
+  .list {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .fake-btn {
+    text-align: center;
+    display: block;
+    flex: 0.5;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    background-color: #00bf5c;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 5px;
+    text-transform: unset;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &.rent {
+      background-color: #1481f8;
+      border-right: none;
+      border-bottom-right-radius: 0;
+    }
+    &.see-more {
+      border-left: none;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

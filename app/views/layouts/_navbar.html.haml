@@ -1,0 +1,58 @@
+%nav#mainNav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand.page-scroll{:href => root_path}
+        %img{src: '/logo.png'}
+        .site-name
+          = MedDonations
+
+    #navbar-collapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+
+        -# %li.dropdown
+        -#   %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown', role: 'button'}}
+        -#     = t '.tenant'
+        -#     %span.caret
+        -#   %ul.dropdown-menu
+        -#     %li= link_to t('.search_properties'), donations_path
+        -#     %li= link_to t('.login'), new_user_session_path
+
+        -# %li.dropdown
+        -#   %a.dropdown-toggle{href: '#', data: {toggle: 'dropdown', role: 'button'}}
+        -#     = t '.landlord'
+        -#     %span.caret
+        -#   %ul.dropdown-menu
+        -#     %li= link_to t('.login'), new_user_session_path
+
+        -# - unless user_signed_in?
+        -#   %li{class: ('active' if request.path == blog_posts_path)}
+        -#     = link_to t('.blog'), blog_posts_path
+        -#
+        -# - if user_signed_in?
+        -#   %li{class: ('active' if request.path == dashboard_path)}
+        -#     = link_to t('.dashboard'), dashboard_path
+
+        %li{class: ('active' if request.path == new_user_session_path)}
+          - unless user_signed_in?
+            = link_to new_user_session_path do
+              = t('.login')
+          - else
+            = button_to destroy_user_session_path, method: :delete do
+              = 'Logout'
+
+        -if user_signed_in?
+          - if current_user.donor?
+            =link_to 'Post a donation', new_donation_path
+          - elsif current_user.user?
+            = link_to 'View Donations', donations_path
+            = link_to 'Create a request', new_request_path
+          -else
+            = link_to 'View Donations', donations_path
+            = link_to 'View Requests', requests_path
+        -# %li.button-link{class: ('active' if request.path == properties_path)}
+        -#   = link_to t('.find_property'), properties_path

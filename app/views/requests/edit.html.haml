@@ -1,0 +1,7 @@
+%h1 Editing request
+= render "form", request: @request
+%br/
+%div
+  = link_to "Show this request", @request
+  |
+  \#{link_to "Back to requests", requests_path}

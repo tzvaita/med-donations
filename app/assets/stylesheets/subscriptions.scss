@@ -1,0 +1,744 @@
+#new_subscription_modal.alternative-version .modal-dialog {
+  max-width: 500px;
+}
+#new_subscription_modal .alternative-version {
+  .white-background, .gray-background {
+    padding: 1.5em;
+  }
+  .white-background {
+    text-align: center;
+  }
+  .top-icon {
+    width: 7em;
+    margin-bottom: 1em;
+    margin-top: -.5em;
+  }
+  .heading {
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  .subheading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 1em;
+  }
+  button.close {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    opacity: 1;
+  }
+  .selling-points {
+    border: 1px solid #d9d9d9;
+    padding: 1em;
+    border-radius: 6px;
+    text-align: left;
+    .selling-point {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 5px;
+      font-size: 1.1em;
+      &:first-child { margin-top: 0 }
+      .checkmark-wrap {
+        font-size: .9em;
+        background-color: #1ED366;
+        border-radius: 50%;
+        width: 1.5em;
+        height: 1.5em;
+        color: white;
+        text-align: center;
+      }
+      span {
+        padding-left: 10px;
+        max-width: calc(100% - 20px);
+      }
+    }
+  }
+
+  .gray-background {
+    background-color: #D8D8D8;
+    .amount-wrap {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .amount-value {
+      font-size: 2.5em;
+    }
+    input {
+      height: 44px;
+    }
+    .stripe-element-wrapper {
+      height: 45px;
+      border-radius: 4px;
+      border: 1px solid #cccccc;
+      padding: 15px 14px;
+      background-color: white;
+      margin-bottom: 1em;
+    }
+    button {
+      border: none;
+      width: 100%;
+      margin-bottom: 1em;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .fineprint {
+      text-align: center;
+      margin-top: 1em;
+      color: #545454;
+      font-size: .95em;
+      strong {
+        font-weight: normal;
+      }
+    }
+    .form-group.email {
+      margin-bottom: 7px;
+    }
+  }
+
+  @media(max-width: 767px){
+    .heading {
+      font-size: 1.2em;
+    }
+    .selling-points {
+      font-size: .9em;
+    }
+    .gray-background .fineprint {
+      font-size: .8em;
+    }
+  }
+
+}
+
+.card-expiration .form-control {
+  display:inline;
+  width: 45%;
+}
+
+h4.modal-title {
+  font-weight:bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.alert.alert-danger:empty {
+  display: none;
+}
+
+.cancel-subscription, .upgrade-subscription {
+  margin-top:1em;
+}
+
+.panel-body h4 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.form-inline.centered {
+  text-align:center;
+  label {
+    text-align: left;
+  }
+}
+
+.modal#new_subscription_modal {
+
+  .modal-dialog {
+    width: 604px;
+
+    @media (max-width: 767px) {
+      width: auto;
+      transform: none;
+    }
+  }
+
+  .modal-content {
+    box-shadow: none;
+  }
+
+  .modal-header {
+    height: 179px;
+    border-radius: 0;
+    position: relative;
+    padding: 0;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    // background-position-y: 40px;
+    // background-position-x: 634px;
+
+    color: #fff;
+    background:
+      // url('/icons/background-house.png') no-repeat right 16px bottom -8px / 145px,
+      linear-gradient(to bottom, #40eb9f, #1ed366);
+    border-bottom: 15px solid #16a455;
+
+    @media (max-width: 767px) {
+      height: auto;
+      color: inherit;
+      background: none;
+      border-bottom: 0;
+    }
+
+    .main-header {
+      border-radius: 5px 5px 0 0;
+      color: #fff;
+      padding: 15px 32px 0;
+
+      @media (max-width: 767px) {
+        background-color: #1ed366;
+        border-bottom: 10px solid #16a455;
+        height: auto;
+        padding: 0;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 1.36px;
+      text-align: left;
+      text-transform: none;
+      margin-bottom: -8px;
+
+      @media (max-width: 767px) {
+        font-size: 18px;
+        margin-bottom: -5px;
+        text-align: center;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 18px;
+      }
+    }
+
+    .modal-subtitle {
+      font-size: 18px;
+      margin-bottom: 2px;
+      letter-spacing: 1.36px;
+
+      @media (max-width: 320px) {
+        font-size: 14px;
+      }
+    }
+
+    .advantages {
+      font-size: 20px;
+      letter-spacing: 1.36px;
+      padding: 11px 32px 15px;
+
+      p {
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 767px) {
+        border-bottom: 10px solid #16a455;
+        padding: 10px 15px;
+
+        i {
+          color: #1ed366 !important;
+        }
+
+        p {
+          line-height: 2;
+        }
+
+        &, * {
+          font-size: 14px !important;
+        }
+      }
+
+      @media (max-width: 375px) {
+        &, * {
+          font-size: 12px !important;
+        }
+      }
+
+      @media (max-width: 320px) {
+        padding: 11px 10px 15px;
+
+        &, * {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .close {
+      color: #fff;
+      top: 13px;
+      right: 13px;
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: url('/icons/modal-close.svg') no-repeat;
+      background-size: contain;
+      opacity: 1;
+
+      @media (max-width: 767px) {
+        width: 12px;
+        height: 12px;
+        top: 6px;
+        right: 6px;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 20px 30px;
+
+    @media (max-width: 767px) {
+      padding: 25px 8vw;
+    }
+
+    @media (max-width: 320px) {
+      padding: 15px 9px;
+    }
+
+    label {
+      font-size: 12px;
+      letter-spacing: 1.36px;
+      font-weight: 400 !important;
+      margin-bottom: 13px;
+
+      @media (max-width: 767px) {
+        margin-bottom: 9px;
+      }
+    }
+
+    .stripe-element-wrapper {
+      height: 45px;
+      border-radius: 5px;
+      border: 1px solid #979797;
+      padding: 15px 14px;
+    }
+
+    #payment-button {
+      background-color: #5cb85c;
+    }
+
+    button#payment-button[disabled] {
+      opacity: .5;
+    }
+
+    select,
+    input[type='email'],
+    input[type='text'],
+    input[type='number'],
+    input[type='password'] {
+      height: 45px;
+      border-radius: 5px;
+      border: 1px solid #979797;
+      font-size: 12px;
+      letter-spacing: .55px;
+      box-shadow: none;
+      padding: 15px 14px;
+
+      &::placeholder {
+        color: #8C8C8C;
+        letter-spacing: .55px;
+      }
+    }
+
+    .form-cell,
+    .hv-select {
+      margin-right: 11px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    select {
+      -webkit-appearance: none;
+      min-width: 64px;
+
+      @media (max-width: 767px) {
+        min-width: 70px;
+      }
+
+    }
+
+    .input-wrapper {
+      position: relative;
+
+      input {
+        padding-right: 45px;
+      }
+
+      .input-icon {
+        position: absolute;
+        right: 10px;
+        bottom: 13px;
+        cursor: inherit;
+        pointer-events: none;
+
+        svg {
+          width: 32px;
+          height: auto;
+          vertical-align: middle;
+        }
+
+        @media (max-width: 767px) {
+          bottom: 10px;
+        }
+      }
+    }
+
+    .form-row {
+      display: flex;
+      position: relative;
+
+      .form-cell {
+        flex: 1 1 auto;
+
+        &.wide {
+          width: 50%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        &.expanding {
+          flex-wrap: wrap;
+        }
+
+        .form-cell.expanding {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .name-field {
+      height: 45px;
+      border-radius: 6px;
+      border: 1px solid #a6a6a6;
+      padding: 15px 14px;
+      background: #fff;
+      &:focus {
+        border-color: #a6a6a6;
+        box-shadow: none;
+      }
+    }
+
+    .orange-lock {
+      position: absolute;
+      right: 0;
+      top: -7px;
+
+      width: 23px;
+
+      @media (max-width: 767px) {
+        width: 19px;
+      }
+    }
+
+    .card-expiration {
+      display: flex;
+
+      > * {
+        flex: 1 1 auto;
+      }
+    }
+
+    .row .row:last-child {
+      margin-top: 20px;
+    }
+
+    .amount-payable {
+      text-align: center;
+      margin-bottom: 15px;
+
+      @media (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+
+      .heading {
+        color: #bababa;
+        font-size: 16px;
+        margin-bottom: -7px;
+
+        @media (max-width: 767px) {
+          margin-bottom: 1px;
+        }
+      }
+
+      .amount {
+        color: #5d5d5d;
+        font-size: 40px;
+
+        @media (max-width: 767px) {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .terms-of-service {
+      margin-top: 5px;
+      font-size: 14px;
+
+      @media (max-width: 767px) {
+        font-size: 10px;
+        text-align: left;
+      }
+
+      .hv-checkbox span {
+        @media (max-width: 320px) {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 23px;
+
+      @media (max-width: 767px) {
+        margin-top: 18px;
+      }
+    }
+
+    a {
+      color: #1481f8;
+    }
+
+    button {
+      color: #fff;
+      background: #1ed366;
+      width: 372px;
+      margin-bottom: 11px;
+      border-radius: 6px;
+      height: 61px;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: .49px;
+      text-transform: uppercase;
+      transition: none;
+
+      @media (max-width: 767px) {
+        width: 80vw;
+        padding: 0;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 6px;
+        margin-bottom: 9px;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 21px;
+      }
+    }
+
+    .fineprint {
+      font-size: 10px;
+      letter-spacing: 1.36px;
+      line-height: 1.5;
+      color: #8c8c8c;
+
+      strong {
+        font-weight: inherit;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 10px;
+
+        strong {
+          font-size: 15px;
+          letter-spacing: .55px;
+        }
+      }
+    }
+  }
+}
+
+#user_contact_details_modal {
+  font-family: 'Nunito', 'Helvetica Neue', 'Arial', sans-serif;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  .modal-header {
+    padding: 0;
+    border: none;
+  }
+
+  .modal-content {
+    border-radius: 6px;
+    background: #f7f7f7;
+  }
+
+  .modal-col {
+    display: flex;
+  }
+
+  svg {
+    height: 50px;
+  }
+
+  .modal-body {
+    padding: 30px;
+
+    .row {
+      margin-top: 25px;
+    }
+  }
+
+  .close {
+    font-family: "Nunito", "Helvetica Neue", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 7px;
+    text-shadow: none;
+    opacity: 0.8;
+  }
+
+  .form-control {
+    margin-bottom: 20px;
+  }
+
+  .btn-success {
+    text-transform: capitalize;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+.hv-checkbox input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+
+  * {
+    user-select: none;
+    user-drag: none;
+  }
+
+  & + span {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    line-height: 19px;
+    display: inline-flex;
+  }
+
+  & + span:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #979797;
+    transition: all .17s ease-out;
+  }
+
+  &:checked + span:before {
+    box-shadow:
+      inset +1px 0 0 #fff,
+      inset 0 +1px 0 #fff,
+      inset -1px 0 0 #fff,
+      inset 0 -1px 0 #fff;
+    background: #1ed366;
+  }
+
+  & + span:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: #fff;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+      2px 0 0 #fff,
+      4px 0 0 #fff,
+      4px -2px 0 #fff,
+      4px -4px 0 #fff,
+      4px -6px 0 #fff,
+      4px -8px 0 #fff;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+
+  &:checked + span:after {
+    opacity: 1;
+  }
+}
+
+.hv-select select {
+  padding: 8px 38px 8px 8px;
+  /* You can style text of the active select option */
+  font: 400 18px/1.5 'Open Sans', sans-serif;
+  color: #666;
+
+  width: 100%;
+  padding-right: 38px;
+  line-height: 1;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  /* Hide arrow on FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+}
+/* Hide arrow on IE10*/
+.hv-select select::-ms-expand {
+  display: none;
+}
+.hv-select optgroup {
+  color: inherit;
+  font: inherit;
+}
+/* IE9: To hide select arrow we make the select overflow on the right side there is not another way :( */
+@media screen and (min-width:0\0) {
+  .hv-select select {
+    width: calc( 100% + 58px );
+  }
+}
+/* Padding for Stripe Element containers */
+.StripeElement {
+  &--complete {
+    border-color: #28a745;
+  }
+  &--empty {
+
+  }
+  &--focus {
+    border-color: #777;
+  }
+  &--invalid {
+    border-color: #dc3545;
+  }
+  &--webkit-autofill {
+
+  }
+}
+#newSubscriptionModal {
+  .alert {
+    position: static;
+    width: 100%;
+    margin: 20px auto;
+  }
+}

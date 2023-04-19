@@ -1,0 +1,31 @@
+.selectize-dropdown .optgroup-header {
+  padding-top: 7px;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #303030;
+}
+
+#search-filters_tenants .selectize-input {
+  min-height:38px;
+}
+
+.selectize-control.single{
+  .selectize-input{
+    &:after{
+      display:none;
+    }
+  }
+}
+
+.selectize-control.plugin-remove_button [data-value] {
+  padding-right: 20px !important;
+}
+.selectize-control.plugin-remove_button .remove-single {
+  color: inherit;
+  font-size: 20px;
+  line-height: .95em;
+}
+
+input#geolocations-selectized{
+  width: 100% !important;
+}

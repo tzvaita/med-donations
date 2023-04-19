@@ -1,0 +1,101 @@
+form#new_user, form.edit_user {
+
+  .radio_buttons .control-label {
+    display: block;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+  }
+}
+
+.alert h5 {
+  margin-top: 0;
+}
+
+.user_search_agents_rental_periods, .user_search_agents_property_types {
+  input {
+    margin-right: .5em;
+  }
+  label.control-label {
+    display: block;
+  }
+  .radio-inline {
+    padding-left: 0;
+  }
+}
+
+.modal-open  #wrap .container {
+  // -webkit-filter: blur(5px) grayscale(90%);
+}
+
+.modal-backdrop.in {
+  opacity: .65;
+}
+
+.login.modal {
+  margin-top: 8em;
+  .modal-header {
+    background-color: #c3e1e5;
+  }
+  .modal-body {
+    background-color: rgba(195, 225, 229, 0.22);
+    a {
+      font-size: .9em;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    hr {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      //border-color: white;
+    }
+  }
+  .modal-footer {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: gray;
+    a {
+      color: inherit;
+      font-weight: bold;
+    }
+  }
+  .terms-and-conditions {
+    font-size: .8em;
+    margin-top: 1em;
+  }
+
+  .ajax.registration.form {
+    margin-top: 1em;
+
+    // .form-group {
+    //   margin-right: 1em;
+    // }
+    .email-notice {
+      margin-top: 5px;
+      i.fa.fa-info {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.facebook-btn {
+  background-color: #3B5998;
+
+  &:hover {
+    background-color: #203d79;
+  }
+}
+
+// #mainNav {
+//   z-index: 1041;
+// }
