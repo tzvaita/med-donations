@@ -62,6 +62,8 @@ gem 'coffee-rails'
 gem "bootstrap-sass",  "3.4.1"
 
 gem "selectize-rails"
+
+gem 'activeadmin'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
