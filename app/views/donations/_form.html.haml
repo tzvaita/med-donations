@@ -9,9 +9,9 @@
           %li= error.full_message
   %div
     = form.label :name, style: "display: block"
-    = form.text_field :name
+    = form.text_field :name, value: params[:name]
   %div
     = form.label :quantity, style: "display: block"
-    = form.number_field :quantity
+    = form.number_field :quantity, value: params[:quantity]
   %div
     = form.submit
