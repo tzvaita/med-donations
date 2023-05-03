@@ -1,8 +1,7 @@
-%h1 Requests
+%h1 View All Donations
 = simple_form_for :search, url: donations_path, method: 'get' do |f|
-  = f.label 'search'
   = f.input :name, input_html: {value: ""}
-  .button
+  .button.btn.btn-primary
     = f.submit 'Search'
 %table.table.table-bordered
   %thead
@@ -10,6 +9,7 @@
       %th Name
       %th Quantity
       %th Posted
+      %th
   %tbody
   - @donations.each do |request|
     %tr

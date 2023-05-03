@@ -1,9 +1,9 @@
 %p{:style => "color: green"}= notice
-%h1 Requests
+%h1 View All Pending Requests
 = simple_form_for :search, url: requests_path, method: 'get' do |f|
   = f.label 'search'
   = f.input :name, input_html: {value: ""}
-  .button
+  .button.btn.btn-primary
     = f.submit 'Search'
 
 %table.table.table-bordered
