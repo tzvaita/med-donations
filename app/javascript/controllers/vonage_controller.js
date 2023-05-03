@@ -28,7 +28,7 @@ export default class extends Controller {
     this.session.connect(this.token, this.streamConnected.bind(this))
   }
 
-  strwamConnected(error) {
+  streamConnected(error) {
     if (error) {
       this.handleError(error)
     } else {

@@ -1,3 +1,4 @@
+%script(src="https://static.opentok.com/v2/js/opentok.min.js")
 %p#notice= notice
 
 %p
@@ -10,4 +11,4 @@
 = link_to 'Edit', edit_room_path(@room)
 \|
 = link_to 'Back', rooms_path
-%div#videos {"data-controller" = "vonage", "data-vonage-api-key"="246826d154470c432e2f35bede808d4239841b41", "data-token" = #{@token}, "data-vonage-session-id"= #{@room.session_id}, "data-vonage-name"=#{current_user.id}}
+%div#videos{"data-controller" => "vonage", "data-vonage-api-key" => "47709001", "data-vonage-session-id"=> @room.vonage_session_id, "data-vonage-token" => @token, "data-vonage-name"=> current_user.id}
