@@ -64,6 +64,8 @@ gem "bootstrap-sass",  "3.4.1"
 gem "selectize-rails"
 
 gem 'activeadmin'
+
+gem 'opentok'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
