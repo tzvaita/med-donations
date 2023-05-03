@@ -1,0 +1,13 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @room.name
+%p
+  %b Vonage session:
+  = @room.vonage_session_id
+
+= link_to 'Edit', edit_room_path(@room)
+\|
+= link_to 'Back', rooms_path
+%div#videos {"data-controller" = "vonage", "data-vonage-api-key"="246826d154470c432e2f35bede808d4239841b41", "data-token" = #{@token}, "data-vonage-session-id"= #{@room.session_id}, "data-vonage-name"=#{current_user.id}}
