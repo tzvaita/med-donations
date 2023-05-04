@@ -1,22 +1,23 @@
-%p{:style => "color: green"}= notice
-%h1 View All Pending Requests
-= simple_form_for :search, url: requests_path, method: 'get' do |f|
-  = f.label 'search'
-  = f.input :name, input_html: {value: ""}
-  .button.btn.btn-primary
-    = f.submit 'Search'
+.container
+  %p{:style => "color: green"}= notice
+  %h1 View All Pending Requests
+  = simple_form_for :search, url: requests_path, method: 'get' do |f|
+    = f.input :name, input_html: {value: ""}
+    .button.btn.btn-primary
+      = f.submit 'Search'
 
-%table.table.table-bordered
-  %thead
-    %tr
-      %th Name
-      %th Quantity
-      %th Posted
-  %tbody
-  - @requests.each do |request|
-    %tr
-      %td= request.name
-      %td= request.quantity
-      %td= request.created_at
-      %td
-        = link_to "View this request", request
+  %table.table.table-bordered
+    %thead
+      %tr
+        %th Name
+        %th Quantity
+        %th Posted
+        %th
+    %tbody
+    - @requests.each do |request|
+      %tr
+        %td= request.name
+        %td= request.quantity
+        %td= request.created_at
+        %td
+          = link_to "View this request", request

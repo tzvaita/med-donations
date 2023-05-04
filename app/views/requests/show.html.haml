@@ -1,16 +1,19 @@
-%p{:style => "color: green"}= notice
+.container
+  %p{:style => "color: green"}= notice
 
-%table.table.table-bordered
-  %thead
-    %tr
-      %th Name
-      %th Quantity
-  %tbody
-    %td= @request.name
-    %td= @request.quantity
-    %td
-      = link_to "Donate", new_donation_path(name: @request.name, quantity: @request.quantity)
-    %td
-      = link_to "Buy", new_owner_path
+  %table.table.table-bordered
+    %thead
+      %tr
+        %th Name
+        %th Quantity
+        %th
+        %th
+    %tbody
+      %td= @request.name
+      %td= @request.quantity
+      %td
+        = link_to "Donate", new_donation_path(name: @request.name, quantity: @request.quantity, specific: @request.id)
+      %td
+        = link_to "Buy", new_owner_path
 
-= link_to "Back to requests", requests_path
+  = link_to "Back to requests", requests_path

@@ -1,20 +1,21 @@
-%h1 View All Donations
-= simple_form_for :search, url: donations_path, method: 'get' do |f|
-  = f.input :name, input_html: {value: ""}
-  .button.btn.btn-primary
-    = f.submit 'Search'
-%table.table.table-bordered
-  %thead
-    %tr
-      %th Name
-      %th Quantity
-      %th Posted
-      %th
-  %tbody
-  - @donations.each do |request|
-    %tr
-      %td= request.name
-      %td= request.quantity
-      %td= request.created_at
-      %td
-        = link_to "View this donation", request
+.container
+  %h1 View All Donations
+  = simple_form_for :search, url: donations_path, method: 'get' do |f|
+    = f.input :name, input_html: {value: ""}
+    .button.btn.btn-primary
+      = f.submit 'Search'
+  %table.table.table-bordered
+    %thead
+      %tr
+        %th Name
+        %th Quantity
+        %th Posted
+        %th
+    %tbody
+    - @donations.each do |request|
+      %tr
+        %td= request.name
+        %td= request.quantity
+        %td= request.created_at
+        %td
+          = link_to "View this donation", request

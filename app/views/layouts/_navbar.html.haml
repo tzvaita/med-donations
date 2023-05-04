@@ -13,6 +13,14 @@
 
     #navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
+        %li
+          =link_to 'Post a donation', new_donation_path
+        %li
+          = link_to 'View Donations', donations_path
+        %li
+          = link_to 'Create a request', new_request_path
+        %li
+          = link_to 'View Requests', requests_path
         %li{class: ('active' if request.path == new_user_session_path)}
           - unless user_signed_in?
             = link_to new_user_session_path do
@@ -20,19 +28,3 @@
           - else
             = button_to destroy_user_session_path, method: :delete do
               = 'Logout'
-
-        -if user_signed_in?
-          - if current_user.donor?
-            %li
-              =link_to 'Post a donation', new_donation_path
-          - elsif current_user.user?
-            %li
-              = link_to 'View Donations', donations_path
-            %li
-              = link_to 'Create a request', new_request_path
-          -else
-            %li
-              = link_to 'View Donations', donations_path
-            %li
-              = link_to 'View Requests', requests_path
-
