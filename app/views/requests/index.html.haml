@@ -14,7 +14,7 @@
         %th Posted
         %th
     %tbody
-    - @requests.each do |request|
+    - @requests.still_active.each do |request|
       %tr
         %td= request.name
         %td= request.quantity
