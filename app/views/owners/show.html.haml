@@ -1,8 +1,8 @@
 %p{:style => "color: green"}= notice
 = render @owner
+%p "A payment has been processed successfully"
 %div
   = link_to "Edit this owner", edit_owner_path(@owner)
   |
-  \#{link_to "Back to owners", owners_path}
+  \#{link_to "Back to payments", owners_path}
   
-  \#{button_to "Destroy this owner", @owner, method: :delete}

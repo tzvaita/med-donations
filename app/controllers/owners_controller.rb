@@ -34,7 +34,7 @@ class OwnersController < ApplicationController
   end
 
   def process_paynow
-    paynow = Paynow.new('15923', '862d1a52-65e6-496a-996b-7bd19b0e8dfc', "http://localhost:3000/owners/#{@owner}", "http://localhost:3000/owners/#{@owner}")
+    paynow = Paynow.new('15923', '862d1a52-65e6-496a-996b-7bd19b0e8dfc', "https://med-donations.onrender.com/owners/#{@owner.id}", "https://med-donations.onrender.com/owners/#{@owner.id}")
 
     payment = paynow.create_payment('Order Number', 'h210345m@hit.ac.zw')
     payment.add('goods', 22.76)
