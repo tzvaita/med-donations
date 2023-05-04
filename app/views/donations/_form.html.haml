@@ -13,5 +13,9 @@
   %div
     = form.label :quantity, style: "display: block"
     = form.number_field :quantity, value: params[:quantity]
+  %div
+    = form.hidden_field :targeted, value: params[:targeted] if params[:targeted].present?
+  %div
+    = form.hidden_field :request_id, value: params[:request_id] if params[:request_id].present?
   %button.btn.btn-primary
     = form.submit

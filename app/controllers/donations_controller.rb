@@ -27,10 +27,12 @@ class DonationsController < ApplicationController
 
   # POST /donations or /donations.json
   def create
+    @request = Request.find(donation_params[:request_id]) if donation_params[:request_id].present?
     @donation = current_user.donations.new(donation_params)
 
     respond_to do |format|
       if @donation.save
+        @request&.update(role: :pending)
         format.html { redirect_to donation_url(@donation), notice: "Donation was successfully created." }
         format.json { render :show, status: :created, location: @donation }
       else
@@ -71,6 +73,6 @@ class DonationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def donation_params
-      params.require(:donation).permit(:name, :quantity)
+      params.require(:donation).permit(:name, :quantity, :targeted, :request_id)
     end
 end

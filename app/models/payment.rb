@@ -1,3 +1,3 @@
-class Payment < ApplicationRecord
-  belongs_to :request
-end
+# class Payment < ApplicationRecord
+#   belongs_to :request
+# end
